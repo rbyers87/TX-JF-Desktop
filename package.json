@@ -3,7 +3,7 @@
   "main": "expo-router/entry",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://rbyers87.github.io/YOUR_REPO_NAME",
+  "homepage": "https://rbyers87.github.io/TX-JF-Desktop",
   "scripts": {
     "dev": "EXPO_NO_TELEMETRY=1 expo start",
     "build:web": "expo export --platform web --output-dir dist",
