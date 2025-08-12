@@ -3,9 +3,12 @@
   "main": "expo-router/entry",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://rbyers87.github.io/YOUR_REPO_NAME",
   "scripts": {
     "dev": "EXPO_NO_TELEMETRY=1 expo start",
-    "build:web": "expo export --platform web",
+    "build:web": "expo export --platform web --output-dir dist",
+    "predeploy": "npm run build:web",
+    "deploy": "gh-pages -d dist",
     "lint": "expo lint"
   },
   "dependencies": {
@@ -45,6 +48,7 @@
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@types/react": "~19.0.10",
-    "typescript": "~5.8.3"
+    "typescript": "~5.8.3",
+    "gh-pages": "^6.1.1"
   }
 }
